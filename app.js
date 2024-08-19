@@ -46,12 +46,14 @@ function sendEmail({ email, message, file,fullName,mobile,position,employmentTyp
       to:"contact@d25ent.com" ,
       subject:`Job Application From ${fullName}`,
       html: `
-       <p>${fullName}</p>
-        <p>${mobile}</p>
+      <p>Hi, D25 Event Team New Job Application From ${fullName}</p>
+       <p>Name: ${fullName}</p>
+        <p>Phone: ${mobile}</p>
          <p>${position}</p>
-        <p>${employmentType}</p>
-        <p>${message}</p>
+        <p>Employement Type: ${employmentType}</p>
+        <p>Message: ${message}</p>
         <p>Best Regards</p>
+         <p>D25 Tech Support Team</p>
       `,
       attachments: file ? [
         {
